@@ -1,0 +1,9 @@
+{
+  "dependencies": ["*"],
+  "graphs": {
+    "parallelization": "parallelization:code_analysis_workflow",
+    "router": "router:workflow_router",
+    "detective": "detective_story:detective_workflow",
+    "avaliador": "story_creator:story_workflow"
+  }
+}
