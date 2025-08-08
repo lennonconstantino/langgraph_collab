@@ -18,7 +18,7 @@ touch langgraph.json
 
 # faz as configuracoes
 
-# executando
+# executando (no Mac, nao roda no Safari)
 ```bash
 langgraph dev
 ```

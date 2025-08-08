@@ -4,5 +4,6 @@
     "mathcollab": "mathcollab:simple_workflow",
     "newscollab": "news_collab:news_workflow",
     "firecollab": "fire_collab:collaborative_workflow"
-  }
+  },
+  "env": ".env"
 }
