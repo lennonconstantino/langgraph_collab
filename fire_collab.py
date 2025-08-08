@@ -134,7 +134,7 @@ def prepare_next_task_node(state: CollaborativeAgentState) -> Dict[str, Any]:
 def researcher_node(state: CollaborativeAgentState) -> Dict[str, str]:
     """Executa uma sub-tarefa de pesquisa."""
     task_description = state.get("current_task_description")
-    original_query_for_1lm = state.get("original_query")  # Pode ser útil para dar mais contexto ao LLM final
+    original_query_for_llm = state.get("original_query")  # Pode ser útil para dar mais contexto ao LLM final
 
     if not task_description:
         return {"specialist_result": "Erro: Descrição da tarefa não encontrada ou vazia."}
@@ -192,7 +192,7 @@ def researcher_node(state: CollaborativeAgentState) -> Dict[str, str]:
                 logging.error("Nenhuma URL válida encontrada dentro dos resultados da busca processados.")
 
     except Exception as e:
-        scraped_content_for_1lm = f"Erro ao tentar obter conteúdo da web: {str(e)}. Usarei meu conhecimento geral."
+        scraped_content_for_llm = f"Erro ao tentar obter conteúdo da web: {str(e)}. Usarei meu conhecimento geral."
 
     system_message_researcher = SystemMessage(
         content="""

@@ -16,7 +16,7 @@ def main():
     }
 
     # executa workflow
-    result = collaborative_workflow. invoke(initial_state)
+    result = collaborative_workflow.invoke(initial_state)
 
     # Acessa a resposta final
     print(result["final_response"])
