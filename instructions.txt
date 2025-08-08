@@ -1,0 +1,24 @@
+
+# langsmith, how to execute?
+```bash
+langgraph # help
+```
+
+# como faz para para funcionar?
+touch langgraph.json
+{
+  "dependencies": ["*"],
+  "graphs": {
+    "mathcollab": "mathcollab:simple_workflow",
+    "newscollab": "news_collab:news_workflow",
+    "firecollab": "fire_collab:collaborative_workflow"
+    --> "{nickname}" : "{file.py}:{name_of_graph}"
+  }
+}
+
+# faz as configuracoes
+
+# executando
+```bash
+langgraph dev
+```

@@ -168,4 +168,4 @@ workflow_builder. add_conditional_edges(
 workflow_builder.add_edge("synthesize_response", END)
 workflow_builder.add_edge("error_handler", END)
 
-simple_workflow = workflow_builder. compile()
+simple_workflow = workflow_builder.compile()
